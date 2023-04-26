@@ -14,16 +14,16 @@ function _makeGrid () {
   for (let i=0; i < 8; i++){
     grid[i] = [];
     for (let j=0; j < 8; j++){
-      grid[i][j] = [];
+      grid[i][j] = undefined;
     }
   }
 
-  grid[3, 3] = new Piece("white");
-  grid[3, 4] = new Piece("black");
-  grid[4, 3] = new Piece("black");
-  grid[4, 4] = new Piece("white");
+  grid[3][3] = new Piece("white");
+  grid[3][4] = new Piece("black");
+  grid[4][3] = new Piece("black");
+  grid[4][4] = new Piece("white");
 
-  console.log(grid);
+  return grid;
 }
 
 /**
